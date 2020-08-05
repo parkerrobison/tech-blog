@@ -7,10 +7,13 @@ async function editFormHandler(event) {
 
     const title = document.querySelector('input[name="post-title"]').value.trim();
 
+    const post_text = document.querySelector('textarea[name="comment-body"]').value.trim();
+    
     const response = await fetch(`/api/posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
-            title
+            title,
+            post_text
         }),
         headers: {
             'Content-Type': 'application/json'

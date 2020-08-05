@@ -8,11 +8,12 @@
     margin: 0;
     font-family: sans-serif;
     color: #333;
+    background: #231f20;
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #356600;
     font-weight: bold;
     transition: color .1s;
   }
@@ -38,7 +39,7 @@
   
   .post-list {
     margin: 0;
-    padding: 0;
+    padding: 5px;
   }
   
   textarea, input {
@@ -120,10 +121,16 @@
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+    background: #a9ff4d;
+    border: 3px solid #F0F8FF;
+    border-radius: 5px;
+    box-shadow: 10px 10px black;
+    padding: 5px 5px;
   }
   
   .post .title span {
     color: black;
+    
   }
   
   .edit-link {
