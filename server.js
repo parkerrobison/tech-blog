@@ -6,6 +6,8 @@ const helpers = require('./utils/helpers');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ helpers });
 
+require('dotenv').config()
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -28,9 +30,6 @@ app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use(express.cookieParser('secret'));
-app.use(express.cookieSession());
 
 app.use(routes);
 
