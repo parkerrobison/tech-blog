@@ -18,14 +18,11 @@
 
   ## Installation
   
-  No steps required visit our website at: .
+  No steps required visit our website at: https://lit-journey-52102.herokuapp.com/.
   
   ## Usage 
 
   Create an account at the log in page and get started!
-  
-  ## Credits
-  
   
    
   ## License
